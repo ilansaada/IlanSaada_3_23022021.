@@ -1,0 +1,145 @@
+
+
+
+
+    
+.exploration{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+
+
+
+.howto{
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    
+    &__icon{
+
+        font-size: 20px;
+        color: #7a7979;
+        margin: 20px;
+    }
+
+    & small{
+
+        font-size: 18px;
+    }
+    &__steps{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+
+
+
+
+.restaurants{
+
+    background-color: #f2f2f2;
+    
+}
+
+.card{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+
+    
+    & a{
+
+        padding: 20px;
+    }
+    
+    /*&__inscription{
+    
+       position: absolute;
+       right: 0px;
+       left: 0px;
+       width: 70px;
+       height: 20px; 
+       background-color: cadetblue;
+       margin: 0px;
+    }  */  
+    &__img{
+        
+        height: 25%;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    &__details{
+
+        
+        height: 25%;
+        
+        background-color: rgb(255, 255, 255);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: -5px;
+        padding-left: 15px;
+        padding-top: 15px;
+
+    
+    }
+
+
+    &__details h3  {
+
+        margin:0px;
+        
+
+    }
+   
+}
+
+@media screen and (min-width: 1000px){
+
+    .card{
+        
+        display: flex;
+        flex-direction: initial; 
+        justify-content: space-between;
+
+    }
+    
+}
+/*menus*/
+.menu h3{
+    border-bottom: solid lightseagreen;
+
+}
+.menu__details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    margin-bottom:20px ;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+@media screen and (min-width: 1000px){
+    .menu{
+        display: flex;
+        flex-direction: initial;
+        justify-content: center;
+        padding-left: 10px;
+        margin-bottom:20px ;
+        background-color: #FFF;
+        border-radius: 10px;
+    }
+
+   
+    
+}

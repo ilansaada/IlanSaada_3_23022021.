@@ -1,0 +1,8 @@
+@mixin btn {
+    .btn{
+
+        border-radius: 20px;
+        height: 30px;
+        background-color: $colour-primary;
+    }
+}
