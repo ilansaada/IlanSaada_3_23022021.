@@ -1,11 +1,15 @@
 footer{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     padding: 25px;
+    background-color: rgb(0, 0, 0);
+    
 
 
     .footer__logo{
+        font-family: "Shrikhand", "cursive";
+        color: #FFFF;
         height: 50px;
         width: 200px;
     }
@@ -15,12 +19,15 @@ footer{
 
         list-style-type: none;
         padding: 0;
+        
     }
     & i{
 
         margin-right: 10px;
     }
 
-
+    & a{
+        color: #FFF;
+    }
 
 }    
