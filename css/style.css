@@ -121,6 +121,16 @@ a {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
+.card__footer {
+  display: flex;
+  align-items: center;
+}
+.card__footer i {
+  cursor: pointer;
+}
+.card__details {
+  width: 90%;
+}
 .card__details h3, .card p {
   margin: 10px;
 }

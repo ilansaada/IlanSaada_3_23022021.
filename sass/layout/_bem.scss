@@ -72,7 +72,18 @@
         border-top-right-radius: 15px;
         
     }
-   
+    &__footer{
+
+        display: flex;
+        align-items: center;
+    }
+    &__footer i{
+
+        cursor: pointer;
+    }
+    &__details{
+        width: 90%
+    }
 
     &__details h3,p  {
 
