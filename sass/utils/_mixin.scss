@@ -2,8 +2,10 @@
     margin-top: 10px;;
     border-radius: 20px;
     height: 30px;
-    background-color: $colour-primary;
+    background-color: $colour-gradiant;
     cursor: pointer;
     display: flex;
-    align-items: center;  
+    align-items: center; 
+    padding: 1.5%; 
+    color: #FFFF;
 }
