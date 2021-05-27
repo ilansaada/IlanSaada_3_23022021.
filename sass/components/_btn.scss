@@ -1,0 +1,8 @@
+button{
+    @include btn;
+}
+
+.btn{
+    display: flex;
+    justify-content:center ;
+}

@@ -5,13 +5,12 @@ h4, p {
 
 body {
   font-family: "roboto", "cursive";
+  margin: 0px;
 }
 
 main {
   background-color: #F2F2F2;
   margin-top: 10px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
 }
 
 h1, h2 {
@@ -29,13 +28,9 @@ a {
 }
 
 /*menu*/
-.fas fa-arrow-left {
+header .fas {
   position: absolute;
   left: 10px;
-}
-
-.menu__container h2 {
-  font-family: "shrikhand";
 }
 
 .menu__img {
@@ -44,21 +39,23 @@ a {
   width: 100%;
   object-fit: cover;
 }
-
+.menu__container h2 {
+  font-family: "shrikhand";
+}
 .menu h3 {
   border-bottom: solid 6px lightseagreen;
   width: 30px;
 }
-
 .menu__details {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 90%;
   padding-left: 10px;
   margin-bottom: 20px;
   background-color: #FFF;
   border-radius: 0.75rem;
-  margin: 1rem 0;
+  margin-left: 12px;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
@@ -71,7 +68,7 @@ a {
     justify-content: center;
     padding-left: 10px;
     margin-bottom: 20px;
-    background-color: #FFF;
+    background-color: #f2f2f2;
     border-radius: 10px;
     width: 100%;
   }
@@ -89,13 +86,14 @@ a {
   align-items: center;
   padding: 40px;
 }
-.exploration__button {
-  background-color: khaki;
-}
 
 .howto {
+  background-color: #FFFF;
   display: flex;
   flex-direction: column;
+}
+.howto__title {
+  padding: 10px;
 }
 .howto__icon {
   font-size: 20px;
@@ -113,6 +111,9 @@ a {
 .restaurants {
   background-color: #f2f2f2;
   padding-bottom: 10px;
+}
+.restaurants__title {
+  padding: 10px;
 }
 
 .card {
@@ -152,8 +153,8 @@ a {
   }
 
   .card img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
   }
 }
 header {
@@ -168,6 +169,8 @@ header {
 }
 
 .header__search {
+  padding: 20px;
+  background-color: #d1d1d1;
   display: flex;
   justify-content: center;
 }
@@ -177,7 +180,7 @@ footer {
   flex-direction: column;
   align-items: left;
   padding: 25px;
-  background-color: black;
+  background-color: #353535;
 }
 footer .footer__logo {
   font-family: "Shrikhand", "cursive";
@@ -194,6 +197,21 @@ footer i {
 }
 footer a {
   color: #FFF;
+}
+
+button {
+  margin-top: 10px;
+  border-radius: 20px;
+  height: 30px;
+  background-color: #9356DC;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
