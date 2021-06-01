@@ -5,16 +5,16 @@ header{
     align-items: center;
     
 }
-
 .header__logo{
-
-    height: 50px;
-    width: 250px;
+    font-family: "Shrikhand", "cursive";
+    font-size: 50px;
+    
 }
+
 
 .header__search{
     padding: 20px;
-    background-color: #d1d1d1;
+    background-color: #f3f3f3;
     display: flex;
     justify-content: center;
     
@@ -27,6 +27,7 @@ header{
     font-size: 1em;
     text-align: center;
     margin: -40px;
+    font-weight: 700px;
 
 
 }
