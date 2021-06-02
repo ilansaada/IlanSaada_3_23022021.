@@ -1,6 +1,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
 
 h4,p{
     margin: 0px;
@@ -10,7 +11,9 @@ body{
 
     
     font-family: "roboto","cursive";
+    overflow-x: hidden;
     margin: 0px;
+    
     
 }
 main{
@@ -22,7 +25,7 @@ main{
 }
 
 h1,h2{
-    font-family:"bold roboto";
+    font-family:"roboto";
     
     
 }
@@ -60,7 +63,7 @@ a{
         margin-top: -20px;
         padding: 10px;
         position: relative;
-        z-index: 2o;
+        z-index: 2;
         
         
         
@@ -73,9 +76,11 @@ a{
         
     }
     & h3 {
+        text-transform: uppercase;
         border-bottom: solid 6px lightseagreen; width: 30px;
     
     }
+  
     &__header{
         display: flex;
         align-items: center;
@@ -91,27 +96,32 @@ a{
     }
     &__details{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        
         width: 90%;
-        padding-left: 10px;
+        padding: 20px;
+        
         margin-bottom:20px ;
         background-color: #FFF;
         border-radius: .75rem;
-        margin-left: 12px;
+        
         box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
         overflow: hidden;
         cursor: pointer;
     
     
     }
-
+    
+}
+.infos{
+    display: flex;
 }
 
 
 
-
 @media screen and (min-width: 1000px){
+    
     .menu{
         display: flex;
         flex-direction: initial;
@@ -129,7 +139,7 @@ a{
             margin-left: 20px;
             padding: 20px;
             position: relative;
-            z-index: 2o;
+            z-index: 2;
             
             
             border-top-left-radius: 10px;

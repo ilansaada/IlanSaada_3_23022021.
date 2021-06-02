@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap");
 h4, p {
   margin: 0px;
 }
 
 body {
   font-family: "roboto", "cursive";
+  overflow-x: hidden;
   margin: 0px;
 }
 
@@ -14,7 +16,7 @@ main {
 }
 
 h1, h2 {
-  font-family: "bold roboto";
+  font-family: "roboto";
 }
 
 .top__title {
@@ -46,7 +48,7 @@ a {
   margin-top: -20px;
   padding: 10px;
   position: relative;
-  z-index: 2o;
+  z-index: 2;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -54,6 +56,7 @@ a {
   font-family: "shrikhand";
 }
 .menu h3 {
+  text-transform: uppercase;
   border-bottom: solid 6px lightseagreen;
   width: 30px;
 }
@@ -71,17 +74,20 @@ a {
 }
 .menu__details {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   width: 90%;
-  padding-left: 10px;
+  padding: 20px;
   margin-bottom: 20px;
   background-color: #FFF;
   border-radius: 0.75rem;
-  margin-left: 12px;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+}
+
+.infos {
+  display: flex;
 }
 
 @media screen and (min-width: 1000px) {
@@ -101,7 +107,7 @@ a {
     margin-left: 20px;
     padding: 20px;
     position: relative;
-    z-index: 2o;
+    z-index: 2;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
@@ -227,6 +233,15 @@ a {
 .card__details h3, .card p {
   margin: 10px;
 }
+.card__inscription {
+  position: absolute;
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 5px;
+  border-radius: 5px;
+  right: 70rem;
+  top: 43rem;
+}
 
 @media screen and (min-width: 1000px) {
   .howto__steps {
@@ -251,11 +266,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: -20px;
 }
 
 .header__logo {
   font-family: "Shrikhand", "cursive";
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .header__search {
@@ -271,13 +287,23 @@ header {
   font-size: 1em;
   text-align: center;
   margin: -40px;
-  font-weight: 700px;
+  font-weight: 900;
+}
+
+/*header menu*/
+header a {
+  display: flex;
+  align-items: center;
+}
+
+header i {
+  position: absolute;
+  left: 20px;
 }
 
 footer {
   display: flex;
   flex-direction: column;
-  align-items: left;
   padding: 25px;
   background-color: #353535;
 }
