@@ -144,24 +144,6 @@ a {
   background-color: #FFFF;
   display: flex;
   flex-direction: column;
-  /*&  ol li ::before{
-
-
-
-      content: counter(numberlist) " ";
-      background: #9356dc;
-      height: 1.5rem;
-      width: 1.5rem;
-      border-radius: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      position: absolute;
-      left: -.75rem;
-
-  }
-  */
 }
 .howto__title {
   padding: 10px;
@@ -189,12 +171,28 @@ a {
   font-weight: bolder;
   text-align: center;
 }
-.howto ol li {
+.howto ol {
   counter-reset: numberlist;
+}
+.howto ol li {
   margin: 0 0 0.5rem 0;
   counter-increment: numberlist;
   position: relative;
   list-style: none;
+}
+.howto ol li::before {
+  content: counter(numberlist);
+  background: #9356dc;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: 18px;
+  left: -10px;
 }
 
 .restaurants {
@@ -209,6 +207,7 @@ a {
   background-color: #fff;
   border-radius: 15px;
   margin: 20px;
+  width: auto;
 }
 .card__img {
   height: 250px;
@@ -234,13 +233,13 @@ a {
   margin: 10px;
 }
 .card__inscription {
-  position: absolute;
+  position: relative;
   background-color: #99e2d0;
   color: #1b6150;
-  padding: 5px;
+  padding: 9px;
   border-radius: 5px;
-  right: 70rem;
-  top: 43rem;
+  bottom: 230px;
+  left: 230px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -257,9 +256,8 @@ a {
     justify-content: space-around;
   }
 
-  .card img {
-    width: 300px;
-    height: 200px;
+  .card {
+    width: 30%;
   }
 }
 header {
@@ -324,6 +322,12 @@ footer a {
   color: #FFF;
 }
 
+@media screen and (min-width: 1000px) {
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 button {
   margin-top: 10px;
   border-radius: 20px;

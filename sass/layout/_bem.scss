@@ -10,15 +10,12 @@
     padding: 40px;
     text-align: center;
     background-color: #fafafa
-    
-
 }
 
 
 
 
 .howto{
-
     background-color: #FFFF;
     display: flex;
     flex-direction: column; 
@@ -44,37 +41,29 @@
         flex-direction: column;
         padding: 20px;
         text-align: center;
-        
-       
- 
     }
     & li{
         
         background-color: #f6f6f6;
-        
         padding: 0px;
         border-radius: 20px;
         padding-right: 60px;
         margin-bottom: 20px;
         font-weight: bolder;
-        text-align: center;
- 
-        
+        text-align: center;  
     }
-    &  ol li {
-
+    & ol {
         counter-reset: numberlist;
+    }
+    & ol li {
         margin: 0 0 0.5rem 0;
         counter-increment: numberlist;
         position: relative;
         list-style: none;
     }
     
-    /*&  ol li ::before{
-
-        
-        
-        content: counter(numberlist) " ";
+    & ol li::before{
+        content: counter(numberlist);
         background: #9356dc;
         height: 1.5rem;
         width: 1.5rem;
@@ -84,15 +73,10 @@
         align-items: center;
         color: #fff;
         position: absolute;
-        left: -.75rem;
-        
+        top: 18px;
+        left: -10px;
     }
-    */
-
-
-        
-    
-   
+ 
     
 }
 
@@ -103,14 +87,11 @@
 
     background-color: #f2f2f2;
     padding-bottom:10px;
-    
 
     &__title{
 
         padding: 10px;
-    }
- 
-    
+    }  
 }
 
 .card{
@@ -118,11 +99,9 @@
     background-color: #fff;
     border-radius: 15px;
     margin: 20px;
-
-
+    width: auto;
+    
     &__img{
-        
-
         height: 250px;
         width: 100%;
         object-fit: cover;
@@ -131,7 +110,6 @@
         
     }
     &__footer{
-
         display: flex;
         align-items: center;
     }
@@ -148,22 +126,15 @@
     &__details h3,p  {
 
         margin: 10px;
-        
-        
-        
-        
-
     }
     &__inscription{
-        position: absolute;
+        position: relative;
         background-color: #99e2d0;
         color: #1b6150;
-        padding: 5px;
+        padding: 9px;
         border-radius: 5px;
-        
-        right: 70rem;
-        top: 43rem;
-        
+        bottom: 230px;
+        left: 230px;
     }
    
 }
@@ -177,28 +148,17 @@
             justify-content: space-around;
             margin: auto;
             width: 90%;
-            
-            
-
-        }
-
-        
-       
-        
-        
+        }   
     }
     .restaurants{
-        
         display: flex;
         width: 100%;  
-        
-        justify-content: space-around;
-        
+        justify-content: space-around;   
     }
     
-    .card img{
-
-        width: 300px;
-        height: 200px;
+    .card{
+        
+        
+        width: 30%;
     }
 }
