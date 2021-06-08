@@ -1,11 +1,18 @@
 @mixin btn {
     margin-top: 10px;;
-    border-radius: 20px;
-    height: 30px;
+    border-radius: 30px;
+    height: 7px;
     background-color: $colour-gradiant;
     cursor: pointer;
     display: flex;
     align-items: center; 
-    padding: 1.5%; 
-    color: #FFFF;
+    padding: 20px; 
+    color: #FFFF; 
+    transform: scale(1);
+    transition: transform 300ms;
+    
+    &:hover {
+        transform: scale(1.15);
+    }
 }
+

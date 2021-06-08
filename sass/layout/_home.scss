@@ -32,18 +32,15 @@
     }
 
     & p{
-
         font-size: 18px;
     }
     &__steps{
-        
         display: flex;
         flex-direction: column;
         padding: 20px;
         text-align: center;
     }
     & li{
-        
         background-color: #f6f6f6;
         padding: 0px;
         border-radius: 20px;
@@ -84,18 +81,14 @@
 
 
 .restaurants{
-
     background-color: #f2f2f2;
     padding-bottom:10px;
-
     &__title{
-
         padding: 10px;
     }  
 }
 
 .card{
-
     background-color: #fff;
     border-radius: 15px;
     margin: 20px;
@@ -107,7 +100,6 @@
         object-fit: cover;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
-        
     }
     &__footer{
         display: flex;
@@ -124,7 +116,6 @@
     }
 
     &__details h3,p  {
-
         margin: 10px;
     }
     &__inscription{
@@ -157,8 +148,6 @@
     }
     
     .card{
-        
-        
         width: 30%;
     }
 }

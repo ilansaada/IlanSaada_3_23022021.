@@ -1,0 +1,80 @@
+.loader__logo{ 
+ font-family:"shrikhand";
+font-size: 40px;
+color: #ce56dc;
+}
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.90);
+    animation: loader 0.04s;
+    animation-delay: 1.75s;
+    animation-fill-mode: both;
+    z-index: 1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  
+    &__item {
+      height: 1rem;
+      width: 1rem;
+      border-radius: 1rem;
+      animation: jump 1s;
+      
+  
+      &Container {
+        margin-left: 40px;
+        display: flex;
+        width: 5rem;
+        justify-content: space-between;
+      }
+  
+      &--1 {
+        background-color: $colour-primary;
+      }
+    
+      &--2 {
+        background-color: $colour-secondary;
+        animation-delay: 0.25s;
+      }
+    
+      &--3 {
+        background-color: $colour-valid;
+        animation-delay: 0.5s;
+      }
+    }
+  
+    
+  }
+
+
+
+
+  
+  @keyframes loader {
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+  } 
+  
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(0.5rem);
+    }
+    75% {
+      transform: translateY(-0.5rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+
+

@@ -1,9 +1,11 @@
 @import "./utils/variables";
+@import "./utils/animations";
 @import "./utils/mixin";
 @import "./base/base";
-@import "./layout/bem";
+@import "./layout/home";
 @import "./layout/header";
 @import "./layout/footer";
+@import "./layout/_menu.scss";
 @import "./components/btn";
 
 

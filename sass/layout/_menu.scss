@@ -1,0 +1,111 @@
+/*menu*/
+.arrow{
+    display: flex;
+    align-items: center;
+    margin-top: -40PX;
+    position: absolute;left: 10px;
+}
+
+.menu{
+    &__img{
+
+        max-width: 100%;
+        max-height: 30rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__container{
+        margin-top: -20px;
+        padding: 10px;
+        position: relative;
+        z-index: 2;
+        border-top-left-radius: 10px;
+        border-top-right-radius:10px;
+    }
+    &__container h2{
+    
+        font-family:'shrikhand'; 
+    }
+    & h3 {
+        text-transform: uppercase;
+        border-bottom: solid 6px lightseagreen; width: 30px;
+    }
+  
+    &__header{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &__header i{
+        color: transparent;
+        cursor: pointer;
+        font-size: 27px;
+        -webkit-text-stroke: 1px black;
+    }
+    &__details{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        padding: 20px;
+        margin-bottom:20px ;
+        background-color: #FFF;
+        border-radius: .75rem;
+        box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
+        overflow: hidden;
+        cursor: pointer;
+
+    }
+    
+}
+.infos{
+    display: flex;
+}
+
+
+
+@media screen and (min-width: 1000px){
+    
+    .menu{
+        display: flex;
+        flex-direction: initial;
+        justify-content: center;
+        padding-left: 10px;
+        margin-bottom:20px ;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        width: 100%;
+        &__container{
+            margin-top: -20px;
+            margin-right: 20px;
+            margin-left: 20px;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+            border-top-left-radius: 10px;
+            border-top-right-radius:10px;
+        }
+
+        &__order{
+            width: 100%;
+        }
+        &__header{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+        }
+        &__header i{
+            color: transparent;
+            cursor: pointer;
+            font-size: 27px;
+            -webkit-text-stroke: 1px black;
+        }  
+
+    }
+    .choice {
+
+        margin: 10px;
+    }    
+}
