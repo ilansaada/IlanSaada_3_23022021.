@@ -44,6 +44,12 @@
         font-size: 27px;
         -webkit-text-stroke: 1px black;
     }
+    &__header i:hover{
+        color: #ce56dc;;
+        cursor: pointer;
+        font-size: 27px;
+        -webkit-text-stroke: 1px black;
+    }
     &__details{
         display: flex;
         align-items: center;
