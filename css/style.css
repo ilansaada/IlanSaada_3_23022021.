@@ -1,3 +1,4 @@
+/*loader home*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap");
 .loader__logo {
@@ -63,6 +64,32 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+/*animations menu*/
+@keyframes slideDown {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.infos:hover {
+  animation: checkbox-contain ease 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  min-width: 50px;
+}
+
+@keyframes checkbox-contain {
+  0% {
+    transform: translate(40px, 0);
+  }
+  100% {
+    transform: translate(-20px, 0);
   }
 }
 h4, p {
@@ -171,6 +198,7 @@ a {
   border-radius: 15px;
   margin: 20px;
   width: auto;
+  animation: slideDown 2.5s;
 }
 .card__img {
   height: 250px;
@@ -185,6 +213,12 @@ a {
 }
 .card__footer i {
   color: transparent;
+  cursor: pointer;
+  font-size: 27px;
+  -webkit-text-stroke: 1px black;
+}
+.card__footer i:hover {
+  color: #ce56dc;
   cursor: pointer;
   font-size: 27px;
   -webkit-text-stroke: 1px black;
@@ -321,6 +355,7 @@ footer a {
   text-transform: uppercase;
   border-bottom: solid 6px lightseagreen;
   width: 30px;
+  animation: slideDown 1.5s;
 }
 .menu__header {
   display: flex;
@@ -346,6 +381,7 @@ footer a {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+  animation: slideDown 2s;
 }
 
 .infos {
@@ -387,6 +423,23 @@ footer a {
     cursor: pointer;
     font-size: 27px;
     -webkit-text-stroke: 1px black;
+  }
+  .menu__header i:hover {
+    color: #ce56dc;
+    cursor: pointer;
+    font-size: 27px;
+    -webkit-text-stroke: 1px black;
+  }
+  .menu__check {
+    background-color: #99E2D0;
+    color: #FFFF;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: -57px;
+    margin-left: 10px;
+  }
+  .menu__price {
+    margin-top: 25px;
   }
 
   .choice {

@@ -1,3 +1,6 @@
+
+/*loader home*/
+
 .loader__logo{ 
  font-family:"shrikhand";
 font-size: 40px;
@@ -45,9 +48,7 @@ color: #ce56dc;
         background-color: $colour-valid;
         animation-delay: 0.5s;
       }
-    }
-  
-    
+    } 
   }
 
 
@@ -77,4 +78,38 @@ color: #ce56dc;
 }
 
 
+/*animations menu*/
 
+
+
+
+@keyframes slideDown{
+
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100%{
+
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+.infos:hover {
+  animation: checkbox-contain ease 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  min-width: 50px;
+  
+}
+
+@keyframes checkbox-contain {
+  0% {
+    transform: translate(40px, 0);
+  }
+  100% {
+    transform: translate(-20px, 0);
+  }
+}

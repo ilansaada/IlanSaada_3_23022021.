@@ -93,6 +93,7 @@
     border-radius: 15px;
     margin: 20px;
     width: auto;
+    animation: slideDown 2.5s;
     
     &__img{
         height: 250px;
@@ -107,6 +108,12 @@
     }
     &__footer i{
         color: transparent;
+        cursor: pointer;
+        font-size: 27px;
+        -webkit-text-stroke: 1px black;
+    }
+    &__footer i:hover{
+        color: #ce56dc;;
         cursor: pointer;
         font-size: 27px;
         -webkit-text-stroke: 1px black;
