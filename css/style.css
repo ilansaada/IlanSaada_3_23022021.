@@ -110,6 +110,7 @@ main {
 
 h1, h2 {
   font-family: "roboto";
+  font-weight: 500;
 }
 
 .top__title {
@@ -152,6 +153,7 @@ a {
   flex-direction: column;
   padding: 20px;
   text-align: center;
+  margin: 0px;
 }
 .howto li {
   background-color: #f6f6f6;
@@ -159,7 +161,7 @@ a {
   border-radius: 20px;
   padding-right: 60px;
   margin-bottom: 20px;
-  font-weight: bolder;
+  font-weight: 400;
   text-align: center;
 }
 .howto ol {
@@ -219,7 +221,7 @@ a {
   -webkit-text-stroke: 1px black;
 }
 .card__footer i:hover {
-  color: #ce56dc;
+  color: #ff79da;
   cursor: pointer;
   font-size: 27px;
   -webkit-text-stroke: 1px black;
@@ -259,7 +261,7 @@ a {
   }
 
   .card__footer i:hover {
-    color: #ce56dc;
+    color: #ff79da;
     cursor: pointer;
     font-size: 27px;
     -webkit-text-stroke: 1px black;
@@ -269,12 +271,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: -20px;
 }
 
 .header__logo {
   font-family: "Shrikhand", "cursive";
   font-size: 40px;
+  color: #3a3a3a;
 }
 
 .header__search {
@@ -379,7 +381,7 @@ footer a {
   -webkit-text-stroke: 1px black;
 }
 .menu__header i:hover {
-  color: #ce56dc;
+  color: #ff79da;
   cursor: pointer;
   font-size: 27px;
   -webkit-text-stroke: 1px black;
@@ -451,10 +453,10 @@ footer a {
     -webkit-text-stroke: 1px black;
   }
   .menu__header i:hover {
-    color: #ce56dc;
+    color: #ff79da;
     cursor: pointer;
     font-size: 27px;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1px transparent;
   }
   .menu__check {
     background-color: #99E2D0;
@@ -476,7 +478,7 @@ button {
   margin-top: 10px;
   border-radius: 30px;
   height: 7px;
-  background-color: #ce56dc;
+  background-color: #ff79da;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -486,7 +488,9 @@ button {
   transition: transform 300ms;
 }
 button:hover {
-  transform: scale(1.15);
+  -webkit-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.75);
 }
 
 .btn {

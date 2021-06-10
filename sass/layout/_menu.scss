@@ -46,7 +46,7 @@
         -webkit-text-stroke: 1px black;
     }
     &__header i:hover{
-        color: #ce56dc;;
+        color: rgb(255,121,218);
         cursor: pointer;
         font-size: 27px;
         -webkit-text-stroke: 1px black;
@@ -126,10 +126,10 @@
             
         }  
         &__header i:hover{
-            color: #ce56dc;;
+            color: rgb(255,121,218); 
             cursor: pointer;
             font-size: 27px;
-            -webkit-text-stroke: 1px black;
+            -webkit-text-stroke: 1px transparent;
         }
         &__check {
 
