@@ -5,6 +5,7 @@
   font-family: "shrikhand";
   font-size: 40px;
   color: #ce56dc;
+  animation: jump 2s;
 }
 
 .loader {
@@ -22,28 +23,28 @@
   align-items: center;
   justify-content: center;
 }
-.loader__item {
+.loader__points {
   height: 1rem;
   width: 1rem;
   border-radius: 1rem;
-  animation: jump 1s;
+  animation: jump 2s;
 }
-.loader__itemContainer {
+.loader__pointsContainer {
   margin-left: 40px;
   display: flex;
   width: 5rem;
   justify-content: space-between;
 }
-.loader__item--1 {
+.loader__points--1 {
   background-color: #9356DC;
 }
-.loader__item--2 {
+.loader__points--2 {
   background-color: #FF79DA;
-  animation-delay: 0.25s;
-}
-.loader__item--3 {
-  background-color: #99E2D0;
   animation-delay: 0.5s;
+}
+.loader__points--3 {
+  background-color: #99E2D0;
+  animation-delay: 1s;
 }
 
 @keyframes loader {
@@ -256,14 +257,14 @@ a {
   .card {
     width: 30%;
   }
-}
-.card__footer i:hover {
-  color: #ce56dc;
-  cursor: pointer;
-  font-size: 27px;
-  -webkit-text-stroke: 1px black;
-}
 
+  .card__footer i:hover {
+    color: #ce56dc;
+    cursor: pointer;
+    font-size: 27px;
+    -webkit-text-stroke: 1px black;
+  }
+}
 header {
   display: flex;
   flex-direction: column;
@@ -346,6 +347,7 @@ footer a {
   max-height: 30rem;
   width: 100%;
   object-fit: cover;
+  animation: slideDown 2s;
 }
 .menu__container {
   margin-top: -20px;
@@ -395,6 +397,17 @@ footer a {
   overflow: hidden;
   cursor: pointer;
   animation: slideDown 2s;
+}
+.menu__check {
+  background-color: #99E2D0;
+  color: #FFFF;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: -57px;
+  margin-left: 10px;
+}
+.menu__price {
+  margin-top: 25px;
 }
 
 .infos {

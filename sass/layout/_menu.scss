@@ -13,6 +13,7 @@
         max-height: 30rem;
         width: 100%;
         object-fit: cover;
+        animation: slideDown 2s;
     }
     &__container{
         margin-top: -20px;
@@ -63,7 +64,19 @@
         overflow: hidden;
         cursor: pointer;
         animation: slideDown 2s;
+    }
+    &__check {
 
+        background-color: $colour-valid;
+        color: #FFFF;
+        padding: 10px;
+        border-radius: 10px;
+        margin-right: -57px;
+        margin-left: 10px;
+        
+    }
+    &__price{
+        margin-top: 25px;
     }
     
 }
@@ -74,7 +87,6 @@
 
 
 @media screen and (min-width: 1000px){
-    
     .menu{
         display: flex;
         flex-direction: initial;

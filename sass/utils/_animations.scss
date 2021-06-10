@@ -5,6 +5,7 @@
  font-family:"shrikhand";
 font-size: 40px;
 color: #ce56dc;
+animation: jump 2s;
 }
 .loader {
     position: fixed;
@@ -21,11 +22,11 @@ color: #ce56dc;
     align-items:center;
     justify-content:center;
   
-    &__item {
+    &__points {
       height: 1rem;
       width: 1rem;
       border-radius: 1rem;
-      animation: jump 1s;
+      animation: jump 2s;
       
   
       &Container {
@@ -41,12 +42,12 @@ color: #ce56dc;
     
       &--2 {
         background-color: $colour-secondary;
-        animation-delay: 0.25s;
+        animation-delay: 0.5s;
       }
     
       &--3 {
         background-color: $colour-valid;
-        animation-delay: 0.5s;
+        animation-delay: 1s;
       }
     } 
   }
