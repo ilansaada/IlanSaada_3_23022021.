@@ -9,7 +9,7 @@ header{
 .header__logo{
     font-family: "Shrikhand", "cursive";
     font-size: 40px;
-    color: #3a3a3a
+    color: black;
     
     
 }
@@ -20,15 +20,19 @@ header{
     background-color: #f3f3f3;
     display: flex;
     justify-content: center;
+    color: #3a3a3a;
+    box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.75);
 }
 .header__imputsearch{
     background-color: transparent;
+    color: #3a3a3a;
     border: none;
     font-size: 1em;
     text-align: center;
     margin: -40px;
     font-weight: 900;
 }
+
 
 /*header menu*/
 header a{ 
