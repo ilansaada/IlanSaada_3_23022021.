@@ -114,3 +114,21 @@ animation: jump 2s;
     transform: translate(-20px, 0);
   }
 }
+
+
+
+
+
+.menu__details{
+
+ animation: fade-in-meal-card 4s;
+}
+
+@keyframes fade-in-meal-card {
+  0% {
+    opacity: 0; margin-top: 15px; 
+  }
+  100% {
+    opacity: 1; margin-top: 0; 
+  }
+}
