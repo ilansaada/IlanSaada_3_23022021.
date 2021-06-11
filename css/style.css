@@ -147,7 +147,7 @@ a {
   align-items: center;
   padding: 40px;
   text-align: center;
-  background-color: #F2F2F2;
+  background-color: #f6f6f6;
 }
 
 .howto {
@@ -177,16 +177,21 @@ a {
   background-color: #f6f6f6;
   padding: 0px;
   border-radius: 20px;
-  padding-right: 60px;
+  padding-right: 35px;
   margin-bottom: 20px;
   font-weight: 400;
   text-align: center;
+  display: flex;
+  align-items: center;
+}
+.howto li i {
+  width: 10%;
 }
 .howto ol {
   counter-reset: numberlist;
 }
 .howto ol li {
-  margin: 0 0 0.5rem 0;
+  margin: 4px;
   counter-increment: numberlist;
   position: relative;
   list-style: none;
@@ -219,7 +224,6 @@ a {
   border-radius: 15px;
   margin: 20px;
   width: auto;
-  animation: slideDown 2.5s;
 }
 .card__img {
   height: 205px;
@@ -370,15 +374,16 @@ footer a {
   padding: 10px;
   position: relative;
   z-index: 2;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 .menu__container h2 {
   font-family: "shrikhand";
 }
 .menu h3 {
+  font-weight: 300;
   text-transform: uppercase;
-  border-bottom: solid 6px lightseagreen;
+  border-bottom: solid 2px #99E2D0;
   width: 30px;
   animation: slideDown 1.5s;
 }
@@ -412,6 +417,7 @@ footer a {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+  animation: slideDown 1.5s;
 }
 .menu__check {
   background-color: #99E2D0;
@@ -447,8 +453,8 @@ footer a {
     padding: 20px;
     position: relative;
     z-index: 2;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
   }
   .menu__order {
     width: 100%;

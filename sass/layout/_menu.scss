@@ -20,16 +20,17 @@
         padding: 10px;
         position: relative;
         z-index: 2;
-        border-top-left-radius: 10px;
-        border-top-right-radius:10px;
+        border-top-left-radius: 30px;
+        border-top-right-radius:30px;
     }
     &__container h2{
     
         font-family:'shrikhand'; 
     }
     & h3 {
+        font-weight: 300;
         text-transform: uppercase;
-        border-bottom: solid 6px lightseagreen; width: 30px;
+        border-bottom: solid 2px $colour-valid; width: 30px;
         animation: slideDown 1.5s;
     }
   
@@ -64,6 +65,7 @@
         box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
         overflow: hidden;
         cursor: pointer;
+        animation: slideDown 1.5s;
     }
     &__check {
 
@@ -103,8 +105,8 @@
             padding: 20px;
             position: relative;
             z-index: 2;
-            border-top-left-radius: 10px;
-            border-top-right-radius:10px;
+            border-top-left-radius: 30px;
+            border-top-right-radius:30px;
         }
 
         &__order{
