@@ -54,6 +54,7 @@
         -webkit-text-stroke: 1px black;
     }
     &__details{
+        flex-wrap: wrap;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -66,7 +67,14 @@
         overflow: hidden;
         cursor: pointer;
         animation: slideDown 1.5s;
+        h4{
+            width: 100%;
+        }
+        .menu__description{
+            width: 80%;
+        }
     }
+
     &__check {
 
         background-color: $colour-valid;
@@ -78,12 +86,15 @@
         
     }
     &__price{
-        margin-top: 25px;
+        
     }
+
     
 }
 .infos{
     display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 

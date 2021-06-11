@@ -133,7 +133,7 @@ h1, h2 {
 
 a {
   text-decoration: none;
-  font-family: "roboto bold";
+  font-family: "roboto", "bold";
   color: black;
 }
 
@@ -255,13 +255,22 @@ a {
   margin: 10px;
 }
 .card__inscription {
-  position: relative;
+  position: absolute;
   background-color: #99e2d0;
   color: #1b6150;
   padding: 9px;
   border-radius: 5px;
-  bottom: 190px;
-  left: 230px;
+  bottom: -270px;
+  left: 255px;
+}
+.card__inscription_2 {
+  position: absolute;
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 9px;
+  border-radius: 5px;
+  bottom: -570px;
+  left: 255px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -282,6 +291,24 @@ a {
     width: 30%;
     height: 300px;
   }
+  .card__inscription {
+    position: absolute;
+    background-color: #99e2d0;
+    color: #1b6150;
+    padding: 9px;
+    border-radius: 5px;
+    bottom: 70px;
+    left: 255px;
+  }
+  .card__inscription_2 {
+    position: absolute;
+    background-color: #99e2d0;
+    color: #1b6150;
+    padding: 9px;
+    border-radius: 5px;
+    bottom: -170px;
+    left: 600px;
+  }
 }
 header {
   display: flex;
@@ -301,6 +328,9 @@ header {
   display: flex;
   justify-content: center;
   color: #3a3a3a;
+  -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.33);
+  box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.33);
 }
 
 .header__imputsearch {
@@ -406,6 +436,7 @@ footer a {
   -webkit-text-stroke: 1px black;
 }
 .menu__details {
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -419,6 +450,12 @@ footer a {
   cursor: pointer;
   animation: slideDown 1.5s;
 }
+.menu__details h4 {
+  width: 100%;
+}
+.menu__details .menu__description {
+  width: 80%;
+}
 .menu__check {
   background-color: #99E2D0;
   color: #FFFF;
@@ -427,12 +464,10 @@ footer a {
   margin-right: -57px;
   margin-left: 10px;
 }
-.menu__price {
-  margin-top: 25px;
-}
-
 .infos {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 1000px) {

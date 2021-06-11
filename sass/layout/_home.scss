@@ -133,16 +133,26 @@
     }
     
     &__inscription{
-        position: relative;
+        position: absolute;
         background-color: #99e2d0;
         color: #1b6150;
         padding: 9px;
         border-radius: 5px;
-        bottom: 190px;
-        left: 230px;
+        bottom: -270px;
+        left: 255px;
+    }
+    &__inscription_2{
+        position: absolute;
+        background-color: #99e2d0;
+        color: #1b6150;
+        padding: 9px;
+        border-radius: 5px;
+        bottom: -570px;
+        left: 255px;
     }
    
 }
+
 
 @media screen and (min-width: 1000px){
 
@@ -164,6 +174,28 @@
     .card{
         width: 30%;
         height: 300px;
+
+
+        &__inscription{
+            position: absolute;
+            background-color: #99e2d0;
+            color: #1b6150;
+            padding: 9px;
+            border-radius: 5px;
+            bottom: 70px;
+            left: 255px;
+        }
+        &__inscription_2{
+            position: absolute;
+            background-color: #99e2d0;
+            color: #1b6150;
+            padding: 9px;
+            border-radius: 5px;
+            bottom: -170px;
+            left: 600px;
+        }
+
+        
 
     }
 }
