@@ -78,11 +78,13 @@
     opacity: 1;
   }
 }
+/*
 .infos:hover {
   animation: checkbox-contain ease 0.5s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   min-width: 50px;
+
 }
 
 @keyframes checkbox-contain {
@@ -90,23 +92,28 @@
     transform: translate(40px, 0);
   }
   100% {
-    transform: translate(-20px, 0);
+    transform: translate(-40px, 0);
   }
 }
-.menu__details {
-  animation: fade-in-meal-card 4s;
+
+
+
+menu details animations
+
+.menu__details{
+
+ animation: fade-in-meal-card 4s;
 }
 
 @keyframes fade-in-meal-card {
   0% {
-    opacity: 0;
-    margin-top: 15px;
+    opacity: 0; margin-top: 15px; 
   }
   100% {
-    opacity: 1;
-    margin-top: 0;
+    opacity: 1; margin-top: 0; 
   }
 }
+*/
 h4, p {
   margin: 0px;
   font-weight: 200;
@@ -124,7 +131,7 @@ main {
 
 h1, h2 {
   font-family: "roboto";
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .top__title {
@@ -236,18 +243,6 @@ a {
   display: flex;
   align-items: center;
 }
-.card__footer i {
-  color: transparent;
-  cursor: pointer;
-  font-size: 27px;
-  -webkit-text-stroke: 1px black;
-}
-.card__footer i:hover {
-  background-image: linear-gradient(6deg, #ff79da 0%, #9356dc 100%);
-  cursor: pointer;
-  font-size: 27px;
-  -webkit-text-stroke: 1px black;
-}
 .card__details {
   width: 90%;
 }
@@ -260,7 +255,7 @@ a {
   color: #1b6150;
   padding: 9px;
   border-radius: 5px;
-  bottom: -270px;
+  bottom: -230px;
   left: 255px;
 }
 .card__inscription_2 {
@@ -269,8 +264,45 @@ a {
   color: #1b6150;
   padding: 9px;
   border-radius: 5px;
-  bottom: -570px;
+  bottom: -530px;
   left: 255px;
+}
+
+.favorite-btn {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.favorite-btn i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1px;
+  font-size: 22px;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  color: #7E7E7E;
+  background-color: #FFFF;
+}
+
+.favorite-btn:hover i {
+  opacity: 0;
+}
+
+.favorite-btn:hover .on-hover {
+  opacity: 1;
+}
+
+.favorite-btn .on-hover {
+  opacity: 1;
+  background-color: #FFFF;
+  mix-blend-mode: lighten;
 }
 
 @media screen and (min-width: 1000px) {
@@ -297,8 +329,8 @@ a {
     color: #1b6150;
     padding: 9px;
     border-radius: 5px;
-    bottom: 70px;
-    left: 255px;
+    bottom: 80px;
+    left: 250px;
   }
   .card__inscription_2 {
     position: absolute;
@@ -306,7 +338,7 @@ a {
     color: #1b6150;
     padding: 9px;
     border-radius: 5px;
-    bottom: -170px;
+    bottom: 80px;
     left: 600px;
   }
 }
@@ -314,12 +346,14 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 50px;
 }
 
 .header__logo {
   font-family: "Shrikhand", "cursive";
   font-size: 40px;
   color: black;
+  margin: 0px;
 }
 
 .header__search {
@@ -400,7 +434,7 @@ footer a {
   animation: slideDown 2s;
 }
 .menu__container {
-  margin-top: -20px;
+  margin-top: 230px;
   padding: 10px;
   position: relative;
   z-index: 2;
@@ -423,18 +457,6 @@ footer a {
   width: 100%;
   justify-content: space-between;
 }
-.menu__header i {
-  color: transparent;
-  cursor: pointer;
-  font-size: 27px;
-  -webkit-text-stroke: 1px black;
-}
-.menu__header i:hover {
-  background-image: linear-gradient(6deg, #ff79da 0%, #9356dc 100%);
-  cursor: pointer;
-  font-size: 27px;
-  -webkit-text-stroke: 1px black;
-}
 .menu__details {
   flex-wrap: wrap;
   display: flex;
@@ -449,6 +471,7 @@ footer a {
   overflow: hidden;
   cursor: pointer;
   animation: slideDown 1.5s;
+  margin-right: 10px;
 }
 .menu__details h4 {
   width: 100%;
@@ -461,9 +484,8 @@ footer a {
   color: #FFFF;
   padding: 10px;
   border-radius: 10px;
-  margin-right: -57px;
-  margin-left: 10px;
 }
+
 .infos {
   display: flex;
   width: 100%;
@@ -482,7 +504,7 @@ footer a {
     width: 100%;
   }
   .menu__container {
-    margin-top: -20px;
+    margin-top: 450px;
     margin-right: 20px;
     margin-left: 20px;
     padding: 20px;
@@ -511,11 +533,6 @@ footer a {
     color: #FFFF;
     padding: 10px;
     border-radius: 10px;
-    margin-right: -57px;
-    margin-left: 10px;
-  }
-  .menu__price {
-    margin-top: 25px;
   }
 
   .choice {
@@ -523,7 +540,7 @@ footer a {
   }
 }
 button {
-  margin-top: 10px;
+  margin-top: 40px;
   border-radius: 30px;
   height: 7px;
   background-image: linear-gradient(6deg, #ff79da 0%, #9356dc 100%);
@@ -534,6 +551,7 @@ button {
   color: #FFFF;
   transform: scale(1);
   transition: transform 300ms;
+  border: none;
 }
 button:hover {
   -webkit-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.75);
