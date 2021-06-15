@@ -79,8 +79,6 @@
         top: 18px;
         left: -10px;
     }
- 
-    
 }
 
 
@@ -139,7 +137,19 @@
         bottom: -530px;
         left: 255px;
     }
-   
+    &__details__new{
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 87%;
+        
+        p{
+            margin-top: -12px;
+            margin-left: 0px;
+        }
+        h3{
+            margin-top: 0px;
+        }
+    }
 }
 .favorite-btn {
     position: relative;
@@ -173,20 +183,19 @@
   
 .favorite-btn .on-hover {
     opacity: 1;
-    background-color: #FFFF;
+    background-color: #FFF;
     mix-blend-mode: lighten;
 }
 
 @media screen and (min-width: 1000px){
 
     .howto{
-
         &__steps{
             flex-direction: initial;
             justify-content: space-around;
             margin: auto;
             width: 90%;
-        }   
+        }
     }
     .restaurants{
         display: flex;
@@ -197,28 +206,35 @@
     .card{
         width: 30%;
         height: 300px;
-
-
         &__inscription{
-            position: absolute;
+            position: relative;
             background-color: #99e2d0;
             color: #1b6150;
             padding: 9px;
             border-radius: 5px;
-            bottom: 80px;
-            left: 250px;
+            bottom: 170px;
+            left: 215px;
         }
         &__inscription_2{
-            position: absolute;
+            position: relative;
             background-color: #99e2d0;
             color: #1b6150;
             padding: 9px;
             border-radius: 5px;
-            bottom: 80px;
-            left: 600px;
+            bottom: 168px;
+            left: 214px;
         }
-
-        
-
+        &__details__new{
+            margin-top: -27px;
+            margin-left: 10px;
+            width: 87%;
+             p{
+                margin-top: -12px;
+                margin-left: 0px;
+            }
+            h3{
+                margin-top: 18px;
+            }
+        }
     }
 }

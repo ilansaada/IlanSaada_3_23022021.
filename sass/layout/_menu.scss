@@ -52,8 +52,9 @@
         box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
         overflow: hidden;
         cursor: pointer;
-        animation: slideDown 1.5s;
+        animation: fade-in-meal-card 4s;
         margin-right: 10px;
+        
         h4{
             width: 100%;
         }
@@ -67,6 +68,7 @@
         color: #FFFF;
         padding: 10px;
         border-radius: 10px;
+        margin-right: -56px;
     }
 }
 .infos{
@@ -106,12 +108,7 @@
             width: 100%;
             justify-content: space-between;
         }
-        &__header i{
-            color: transparent;
-            cursor: pointer;
-            font-size: 27px;
-            -webkit-text-stroke: 1px black;
-        }  
+        
         &__check {
             background-color: $colour-valid;
             color: #FFFF;
@@ -123,4 +120,39 @@
         margin: 10px;
     }   
     
+}
+.menu__container .favorite-btn {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background-color: #9356DC;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background-image: linear-gradient(#FF79DA, #9356DC);
+    cursor: pointer;
+    margin-top: 3px;
+}
+.menu__container .favorite-btn i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1px;
+    font-size: 22px;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    color: #7E7E7E;
+    background-color: #F2F2F2;
+}
+  
+.menu__container .favorite-btn:hover i {
+    opacity: 0;
+}
+  
+.menu__container .favorite-btn:hover .on-hover {
+    opacity: 1;
+}
+  
+.menu__container .favorite-btn .on-hover {
+    opacity: 1;
+    background-color: #F2F2F2;
+    mix-blend-mode: lighten;
 }
