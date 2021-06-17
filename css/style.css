@@ -79,11 +79,19 @@
   }
 }
 .menu__details:hover .right {
-  animation: checkbox-contain ease 1s;
+  animation: checkbox-contain ease 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.menu__details:hover .menu__details {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .right {
   display: flex;
+  min-height: 40px;
+  align-items: end;
 }
 
 @keyframes checkbox-contain {
@@ -91,7 +99,7 @@
     transform: translate(40px, 0);
   }
   100% {
-    transform: translate(-80px, 0);
+    transform: translate(-60px, 0);
   }
 }
 @keyframes fade-in-meal-card {
@@ -383,7 +391,6 @@ header {
   justify-content: center;
   color: #3a3a3a;
   -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.33);
-  -moz-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.33);
   box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.33);
 }
 
@@ -477,18 +484,19 @@ footer a {
   justify-content: space-between;
 }
 .menu__details {
+  width: 94%;
+  padding-left: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 95%;
-  padding: 10px;
   margin-bottom: 20px;
   background-color: #FFF;
   border-radius: 0.75rem;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  text-overflow: ellipsis;
   cursor: pointer;
   margin-right: 10px;
   animation: fade-in-meal-card 1s ease-in-out 1s;
@@ -512,22 +520,26 @@ footer a {
 .menu__details:nth-child h4 {
   width: 100%;
 }
-.menu__details .menu__description {
-  width: 80%;
+.menu__price {
+  margin-bottom: 15px;
+  padding-right: 10px;
 }
 .menu__check {
   background-color: #99E2D0;
   color: #FFFF;
   padding: 10px;
-  border-radius: 10px;
-  margin-right: -50px;
-  margin-left: 10px;
-}
-
-.infos {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-right: -60px;
+  min-height: 50px;
+  min-width: 40px;
+  align-content: center;
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  justify-content: center;
+}
+.menu i {
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (min-width: 1000px) {
@@ -564,7 +576,18 @@ footer a {
     background-color: #99E2D0;
     color: #FFFF;
     padding: 10px;
-    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-right: -60px;
+    min-height: 50px;
+    min-width: 40px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+  }
+  .menu__check i {
+    display: flex;
+    align-items: center;
   }
 
   .choice {
@@ -624,7 +647,6 @@ button {
 }
 button:hover {
   -webkit-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.75);
 }
 
