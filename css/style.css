@@ -94,6 +94,16 @@
     transform: translate(-80px, 0);
   }
 }
+@keyframes fade-in-meal-card {
+  0% {
+    opacity: 0;
+    margin-top: 15px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
 h4, p {
   margin: 0px;
   font-weight: 200;
@@ -430,18 +440,6 @@ footer a {
   left: 10px;
 }
 
-.menu__order__1 {
-  animation: slideDown 2s;
-  animation-delay: 0s;
-}
-.menu__order__2 {
-  animation: slideDown 2s;
-  animation-delay: 0.1s;
-}
-.menu__order__3 {
-  animation: slideDown 2s;
-  animation-delay: 0.2s;
-}
 .menu__img {
   max-width: 100%;
   max-height: 30rem;
@@ -486,10 +484,26 @@ footer a {
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
-  animation: fade-in-meal-card 4s;
   margin-right: 10px;
+  animation: fade-in-meal-card 1s ease-in-out 1s;
+  animation-fill-mode: both;
 }
-.menu__details h4 {
+.menu__details:nth-child(1) {
+  animation-delay: 1s;
+}
+.menu__details:nth-child(2) {
+  animation-delay: 1.3s;
+}
+.menu__details:nth-child(3) {
+  animation-delay: 1.6s;
+}
+.menu__details:nth-child(4) {
+  animation-delay: 1.9s;
+}
+.menu__details:nth-child(5) {
+  animation-delay: 2.1s;
+}
+.menu__details:nth-child h4 {
   width: 100%;
 }
 .menu__details .menu__description {

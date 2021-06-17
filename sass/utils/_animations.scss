@@ -119,6 +119,15 @@ animation: jump 2s;
 
 
  
-
+@keyframes fade-in-meal-card {
+  0% {
+      opacity: 0;
+      margin-top: 15px;
+  }
+  100% {
+      opacity: 1;
+      margin-top: 0;
+  }
+}
 
 
