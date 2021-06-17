@@ -55,6 +55,12 @@
     & li i {
         width: 10%;
     }
+    & li:hover{
+        background: lighten($colour-primary,30%);
+        i {
+            color: $colour-primary;
+        }
+    }
     & ol {
         counter-reset: numberlist;
     }
@@ -213,7 +219,7 @@
             padding: 9px;
             border-radius: 5px;
             bottom: 170px;
-            left: 215px;
+            left: 70%;
         }
         &__inscription_2{
             position: relative;
@@ -222,7 +228,7 @@
             padding: 9px;
             border-radius: 5px;
             bottom: 168px;
-            left: 214px;
+            left: 70%;
         }
         &__details__new{
             margin-top: -27px;

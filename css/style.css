@@ -184,6 +184,12 @@ a {
 .howto li i {
   width: 10%;
 }
+.howto li:hover {
+  background: #e4d5f6;
+}
+.howto li:hover i {
+  color: #9356DC;
+}
 .howto ol {
   counter-reset: numberlist;
 }
@@ -332,7 +338,7 @@ a {
     padding: 9px;
     border-radius: 5px;
     bottom: 170px;
-    left: 215px;
+    left: 70%;
   }
   .card__inscription_2 {
     position: relative;
@@ -341,7 +347,7 @@ a {
     padding: 9px;
     border-radius: 5px;
     bottom: 168px;
-    left: 214px;
+    left: 70%;
   }
   .card__details__new {
     margin-top: -27px;
