@@ -98,12 +98,13 @@ animation: jump 2s;
 }
 
 
-.infos:hover {
-  animation: checkbox-contain ease 0.5s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-  min-width: 50px;
+.menu__details:hover .right{
+  animation: checkbox-contain ease 1s;
   
+  
+}
+.right{
+  display: flex;
 }
 
 @keyframes checkbox-contain {
@@ -111,7 +112,7 @@ animation: jump 2s;
     transform: translate(40px, 0);
   }
   100% {
-    transform: translate(-40px, 0);
+    transform: translate(-80px, 0);
   }
 }
 
@@ -120,11 +121,4 @@ animation: jump 2s;
  
 
 
-@keyframes fade-in-meal-card {
-  0% {
-    opacity: 0; margin-top: 15px; 
-  }
-  100% {
-    opacity: 1; margin-top: 0; 
-  }
-}
+
