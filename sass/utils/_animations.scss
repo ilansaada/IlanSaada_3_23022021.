@@ -81,6 +81,10 @@
   -webkit-animation: rotate-center 0.6s ease-in-out both;
   animation: rotate-center 0.6s ease-in-out both;
 }
+.menu__details:hover .menu__price{
+  
+  margin-bottom: 15%;
+  padding-right: 10px;}
 .menu__details:hover .menu__details {
   overflow: hidden;
   text-overflow: ellipsis;
