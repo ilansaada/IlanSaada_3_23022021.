@@ -39,11 +39,8 @@
     }
    
     &__details{
-        width: 94%;
+        overflow: hidden;
         padding-left: 10px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        flex-wrap: wrap;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -51,7 +48,6 @@
         background-color: #FFF;
         border-radius: .75rem;
         box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
-        overflow: hidden;
         cursor: pointer;
         margin-right: 10px;
         animation: fade-in-meal-card 1s ease-in-out 1s;
@@ -62,16 +58,12 @@
         &:nth-child(3) { animation-delay: 1.6s }
         &:nth-child(4) { animation-delay: 1.9s }
         &:nth-child(5) { animation-delay: 2.1s }
-        &:nth-child
-        
         h4{
             width: 100%;
         }
-        
     }
     &__price{
         margin-bottom: 15px;
-
         padding-right: 10px;
     }
 
@@ -93,7 +85,15 @@
         align-items: center;
     }
 }
-
+.right {
+    display: flex;
+    min-height: 40px;
+    align-items: end;
+  }
+.infos{
+    white-space: nowrap;
+    overflow: hidden;
+}
 
 
 

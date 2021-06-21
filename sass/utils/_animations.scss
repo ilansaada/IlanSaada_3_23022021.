@@ -74,27 +74,14 @@
     opacity: 1;
   }
 }
-.menu__details:hover .right {
-  animation: checkbox-contain ease 0.5s;
-  animation-fill-mode: forwards;
+.menu__details:hover .menu__check {
+  margin-right: 0px;
 }
 .menu__details:hover .menu__details {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.right {
-  display: flex;
-  min-height: 40px;
-  align-items: end;
-}
-@keyframes checkbox-contain {
-  0% {
-    transform: translate(40px, 0);
-  }
-  100% {
-    transform: translate(-60px, 0);
-  }
-}
+
 @keyframes fade-in-meal-card {
   0% {
     opacity: 0;
