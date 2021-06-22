@@ -1,192 +1,205 @@
 /*menu*/
-.arrow{
-    display: flex;
-    align-items: center;
-    margin-top: -40PX;
-    position: absolute;left: 10px;
+.arrow {
+  display: flex;
+  align-items: center;
+  margin-top: -40px;
+  position: absolute;
+  left: 10px;
 }
 
-.menu{
-     &__img{
+.menu {
+  &__img {
+    max-width: 100%;
+    max-height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    animation: slideDown 2s;
+  }
+  &__container {
+    margin-top: 230px;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  &__container h2 {
+    font-family: "shrikhand";
+  }
+  & h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: solid 2px $colour-valid;
+    width: 30px;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
 
-        max-width: 100%;
-        max-height: 30rem;
-        width: 100%;
-        object-fit: cover;
-        animation: slideDown 2s;
+  &__details {
+    overflow: hidden;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-right: 10px;
+    animation: fade-in-meal-card 1s ease-in-out 1s;
+    animation-fill-mode: both;
+    // Delay each child's animation to make a progressive fade in effect
+    &:nth-child(1) {
+      animation-delay: 1s;
     }
-    &__container{
-        margin-top: 230px;
-        padding: 10px;
-        position: relative;
-        z-index: 2;
-        border-top-left-radius: 30px;
-        border-top-right-radius:30px;
+    &:nth-child(2) {
+      animation-delay: 1.3s;
     }
-    &__container h2{
-        font-family:'shrikhand'; 
+    &:nth-child(3) {
+      animation-delay: 1.6s;
     }
-    & h3 {
-        font-weight: 300;
-        text-transform: uppercase;
-        border-bottom: solid 2px $colour-valid; width: 30px;
+    &:nth-child(4) {
+      animation-delay: 1.9s;
     }
-    &__header{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        justify-content: space-between;
+    &:nth-child(5) {
+      animation-delay: 2.1s;
     }
-   
-    &__details{
-        overflow: hidden;
-        padding-left: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom:20px;
-        background-color: #FFF;
-        border-radius: .75rem;
-        box-shadow: .25rem .25rem 1rem rgba(0,0,0,.1);
-        cursor: pointer;
-        margin-right: 10px;
-        animation: fade-in-meal-card 1s ease-in-out 1s;
-        animation-fill-mode: both;
-        // Delay each child's animation to make a progressive fade in effect
-        &:nth-child(1) { animation-delay: 1s }
-        &:nth-child(2) { animation-delay: 1.3s }
-        &:nth-child(3) { animation-delay: 1.6s }
-        &:nth-child(4) { animation-delay: 1.9s }
-        &:nth-child(5) { animation-delay: 2.1s }
-        h4{
-            width: 100%;
-        }
+    h4 {
+      width: 100%;
     }
-    &__price{
-        margin-bottom: 15px;
-        padding-right: 10px;
+  }
+  &__price {
+    margin-bottom: -20px;
+    padding-right: 10px;
+  }
+
+  &__check {
+    background-color: $colour-valid;
+    color: #ffff;
+    padding: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-right: -60px;
+    min-height: 50px;
+    min-width: 40px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+  }
+  i {
+    display: flex;
+    align-items: center;
+  }
+}
+.right {
+  display: flex;
+  min-height: 40px;
+  align-items: center;
+}
+.infos {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1000px) {
+  .menu {
+    display: flex;
+    flex-direction: initial;
+    justify-content: center;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    width: 100%;
+    &__container {
+      margin-top: 450px;
+      margin-right: 20px;
+      margin-left: 20px;
+      padding: 20px;
+      position: relative;
+      z-index: 2;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+    &__order {
+      width: 100%;
+    }
+    &__header {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
     }
 
     &__check {
-        background-color: $colour-valid;
-        color: #FFFF;
-        padding: 10px;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
-        margin-right: -60px;
-        min-height: 50px;
-        min-width: 40px;
-        align-content: center;
-        display: flex;
-        justify-content: center;
-    }
-    i{
+      background-color: $colour-valid;
+      color: #ffff;
+      padding: 10px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      margin-right: -60px;
+      min-height: 50px;
+      min-width: 40px;
+      align-content: center;
+      display: flex;
+      justify-content: center;
+
+      i {
         display: flex;
         align-items: center;
+      }
     }
-}
-.right {
-    display: flex;
-    min-height: 40px;
-    align-items: end;
+    &__price {
+      padding-right: 10px;
+    }
   }
-.infos{
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-
-
-@media screen and (min-width: 1000px){
-    .menu{
-        display: flex;
-        flex-direction: initial;
-        justify-content: center;
-        padding-left: 10px;
-        margin-bottom:20px ;
-        background-color: #f2f2f2;
-        border-radius: 10px;
-        width: 100%;
-        &__container{
-            margin-top: 450px;
-            margin-right: 20px;
-            margin-left: 20px;
-            padding: 20px;
-            position: relative;
-            z-index: 2;
-            border-top-left-radius: 30px;
-            border-top-right-radius:30px;
-        }
-        &__order{
-            width: 100%;
-        }
-        &__header{
-            display: flex;
-            align-items: center;
-            width: 100%;
-            justify-content: space-between;
-        }
-        
-        &__check {
-            background-color: $colour-valid;
-            color: #FFFF;
-            padding: 10px;
-            border-top-left-radius: 0px;
-            border-bottom-left-radius: 0px;
-            margin-right: -60px;
-            min-height: 50px;
-            min-width: 40px;
-            align-content: center;
-            display: flex;
-            justify-content: center;
-
-            i{
-                display: flex;
-                align-items: center;
-            }
-        }
-        &__price{
-            margin-bottom: 40%;
-            padding-right: 10px;
-        }
-     }
-    .choice {
-        margin: 10px;
-    }   
-    
+  .choice {
+    margin: 10px;
+  }
 }
 .menu__container .favorite-btn {
-    position: relative;
-    width: 24px;
-    height: 24px;
-    background-color: #9356DC;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background-image: linear-gradient(#FF79DA, #9356DC);
-    cursor: pointer;
-    margin-top: 3px;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: #9356dc;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff79da),
+    to(#9356dc)
+  );
+  background-image: linear-gradient(#ff79da, #9356dc);
+  cursor: pointer;
+  margin-top: 3px;
 }
 .menu__container .favorite-btn i {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 1px;
-    font-size: 22px;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
-    color: #7E7E7E;
-    background-color: #F2F2F2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1px;
+  font-size: 22px;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  color: #7e7e7e;
+  background-color: #f2f2f2;
 }
-  
+
 .menu__container .favorite-btn:hover i {
-    opacity: 0;
+  opacity: 0;
 }
-  
+
 .menu__container .favorite-btn:hover .on-hover {
-    opacity: 1;
+  opacity: 1;
 }
-  
+
 .menu__container .favorite-btn .on-hover {
-    opacity: 1;
-    background-color: #F2F2F2;
-    mix-blend-mode: lighten;
+  opacity: 1;
+  background-color: #f2f2f2;
+  mix-blend-mode: lighten;
 }

@@ -1,48 +1,41 @@
-header{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 50px;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50px;
 }
-.header__logo{
-    font-family: "Shrikhand", "cursive";
-    font-size: 40px;
-    color: black;
-    margin: 0px;
-    
-    
+.header__logo {
+  font-family: "Shrikhand", "cursive";
+  font-size: 40px;
+  color: black;
+  margin: 0px;
 }
 
-
-.header__search{
-    padding: 20px;
-    background-color: #f3f3f3;
-    display: flex;
-    justify-content: center;
-    color: #3a3a3a;
-    -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.33);
-    box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.33);
+.header__search {
+  padding: 20px;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  color: #3a3a3a;
+  -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.33);
+  box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.33);
 }
-.header__imputsearch{
-    background-color: transparent;
-    color: #3a3a3a;
-    border: none;
-    font-size: 1em;
-    text-align: center;
-    margin: -40px;
-    font-weight: 900;
+.header__imputsearch {
+  background-color: transparent;
+  color: #3a3a3a;
+  border: none;
+  font-size: 1em;
+  text-align: center;
+  margin: -40px;
+  font-weight: 900;
 }
-
 
 /*header menu*/
-header a{ 
-
-    display: flex;
-    align-items: center;   
+header a {
+  display: flex;
+  align-items: center;
 }
 header i {
-
-    position: absolute;
-    left: 20px;
+  position: absolute;
+  left: 20px;
 }

@@ -88,7 +88,6 @@
 }
 
 .menu__details:hover .menu__price {
-  margin-bottom: 15%;
   padding-right: 10px;
 }
 
@@ -535,7 +534,7 @@ footer a {
   width: 100%;
 }
 .menu__price {
-  margin-bottom: 15px;
+  margin-bottom: -20px;
   padding-right: 10px;
 }
 .menu__check {
@@ -559,7 +558,7 @@ footer a {
 .right {
   display: flex;
   min-height: 40px;
-  align-items: end;
+  align-items: center;
 }
 
 .infos {
@@ -615,7 +614,6 @@ footer a {
     align-items: center;
   }
   .menu__price {
-    margin-bottom: 40%;
     padding-right: 10px;
   }
 

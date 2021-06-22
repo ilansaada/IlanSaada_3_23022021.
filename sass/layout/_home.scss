@@ -1,246 +1,238 @@
+.exploration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
 
+.howto {
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
 
+  &__title {
+    padding: 10px;
+  }
+  &__icon {
+    font-size: 20px;
+    color: #7a7979;
+    margin: 20px;
+  }
 
-
-    
-.exploration{
+  & p {
+    font-size: 18px;
+  }
+  &__steps {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
-    background-color: #f6f6f6 
-}
-
-
-
-
-.howto{
-    background-color: #FFFF;
+    margin: 0px;
+  }
+  & li {
+    background-color: #f6f6f6;
+    padding: 0px;
+    border-radius: 20px;
+    padding-right: 35px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-align: center;
     display: flex;
-    flex-direction: column; 
-    
-    &__title{
+    align-items: center;
+  }
+  & li i {
+    width: 10%;
+  }
+  & li:hover {
+    background: lighten($colour-primary, 30%);
+    i {
+      color: $colour-primary;
+    }
+  }
+  & ol {
+    counter-reset: numberlist;
+  }
+  & ol li {
+    margin: 4px;
+    counter-increment: numberlist;
+    position: relative;
+    list-style: none;
+  }
 
-        padding: 10px;
-    }
-    &__icon{
-
-        font-size: 20px;
-        color: #7a7979;
-        margin: 20px;
-    }
-
-    & p{
-        font-size: 18px;
-    }
-    &__steps{
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
-        margin: 0px;
-    }
-    & li{
-        background-color: #f6f6f6;
-        padding: 0px;
-        border-radius: 20px;
-        padding-right: 35px;
-        margin-bottom: 20px;
-        font-weight: 400;
-        text-align: center; 
-        display: flex;
-        align-items: center; 
-    }
-    & li i {
-        width: 10%;
-    }
-    & li:hover{
-        background: lighten($colour-primary,30%);
-        i {
-            color: $colour-primary;
-        }
-    }
-    & ol {
-        counter-reset: numberlist;
-    }
-    & ol li {
-        margin: 4px;
-        counter-increment: numberlist;
-        position: relative;
-        list-style: none;
-    }
-    
-    & ol li::before{
-        content: counter(numberlist);
-        background: #9356dc;
-        height: 1.5rem;
-        width: 1.5rem;
-        border-radius: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        position: absolute;
-        top: 18px;
-        left: -10px;
-    }
+  & ol li::before {
+    content: counter(numberlist);
+    background: #9356dc;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 18px;
+    left: -10px;
+  }
 }
 
-
-
-
-.restaurants{
-    background-color: #f2f2f2;
-    padding-bottom:10px;
-    &__title{
-        padding: 10px;
-    }  
+.restaurants {
+  background-color: #f2f2f2;
+  padding-bottom: 10px;
+  &__title {
+    padding: 10px;
+  }
 }
 
-.card{
-    background-color: #fff;
-    border-radius: 15px;
-    margin: 20px;
-    width: auto;
-    
-    
-    &__img{
-        height: 205px;
-        width: 100%;
-        object-fit: cover;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-    }
-    &__footer{
-        display: flex;
-        align-items: center;
-    }
-    
-    &__details{
-        width: 90%;
-    }
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 20px;
+  width: auto;
 
-    &__details h3,p  {
-        margin: 10px;
+  &__img {
+    height: 205px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__details {
+    width: 90%;
+  }
+
+  &__details h3,
+  p {
+    margin: 10px;
+  }
+
+  &__inscription {
+    position: absolute;
+    background-color: #99e2d0;
+    color: #1b6150;
+    padding: 9px;
+    border-radius: 5px;
+    bottom: -230px;
+    left: 255px;
+  }
+  &__inscription_2 {
+    position: absolute;
+    background-color: #99e2d0;
+    color: #1b6150;
+    padding: 9px;
+    border-radius: 5px;
+    bottom: -530px;
+    left: 255px;
+  }
+  &__details__new {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 87%;
+
+    p {
+      margin-top: -12px;
+      margin-left: 0px;
     }
-    
-    &__inscription{
-        position: absolute;
-        background-color: #99e2d0;
-        color: #1b6150;
-        padding: 9px;
-        border-radius: 5px;
-        bottom: -230px;
-        left: 255px;
+    h3 {
+      margin-top: 0px;
     }
-    &__inscription_2{
-        position: absolute;
-        background-color: #99e2d0;
-        color: #1b6150;
-        padding: 9px;
-        border-radius: 5px;
-        bottom: -530px;
-        left: 255px;
-    }
-    &__details__new{
-        margin-top: 10px;
-        margin-left: 10px;
-        width: 87%;
-        
-        p{
-            margin-top: -12px;
-            margin-left: 0px;
-        }
-        h3{
-            margin-top: 0px;
-        }
-    }
+  }
 }
 .favorite-btn {
-    position: relative;
-    width: 24px;
-    height: 24px;
-    background-color: #9356DC;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background-image: linear-gradient(#FF79DA, #9356DC);
-    cursor: pointer;
-    margin-top: 3px;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: #9356dc;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff79da),
+    to(#9356dc)
+  );
+  background-image: linear-gradient(#ff79da, #9356dc);
+  cursor: pointer;
+  margin-top: 3px;
 }
 .favorite-btn i {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 1px;
-    font-size: 22px;
-    -webkit-transition: opacity 0.2s ease-in-out;
-    transition: opacity 0.2s ease-in-out;
-    color: #7E7E7E;
-    background-color: #FFFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1px;
+  font-size: 22px;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  color: #7e7e7e;
+  background-color: #ffff;
 }
-  
+
 .favorite-btn:hover i {
-    opacity: 0;
+  opacity: 0;
 }
-  
+
 .favorite-btn:hover .on-hover {
-    opacity: 1;
+  opacity: 1;
 }
-  
+
 .favorite-btn .on-hover {
-    opacity: 1;
-    background-color: #FFF;
-    mix-blend-mode: lighten;
+  opacity: 1;
+  background-color: #fff;
+  mix-blend-mode: lighten;
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1000px) {
+  .howto {
+    &__steps {
+      flex-direction: initial;
+      justify-content: space-around;
+      margin: auto;
+      width: 90%;
+    }
+  }
+  .restaurants {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
 
-    .howto{
-        &__steps{
-            flex-direction: initial;
-            justify-content: space-around;
-            margin: auto;
-            width: 90%;
-        }
+  .card {
+    width: 30%;
+    height: 300px;
+    &__inscription {
+      position: relative;
+      background-color: #99e2d0;
+      color: #1b6150;
+      padding: 9px;
+      border-radius: 5px;
+      bottom: 170px;
+      left: 70%;
     }
-    .restaurants{
-        display: flex;
-        width: 100%;  
-        justify-content: space-around;   
+    &__inscription_2 {
+      position: relative;
+      background-color: #99e2d0;
+      color: #1b6150;
+      padding: 9px;
+      border-radius: 5px;
+      bottom: 168px;
+      left: 70%;
     }
-    
-    .card{
-        width: 30%;
-        height: 300px;
-        &__inscription{
-            position: relative;
-            background-color: #99e2d0;
-            color: #1b6150;
-            padding: 9px;
-            border-radius: 5px;
-            bottom: 170px;
-            left: 70%;
-        }
-        &__inscription_2{
-            position: relative;
-            background-color: #99e2d0;
-            color: #1b6150;
-            padding: 9px;
-            border-radius: 5px;
-            bottom: 168px;
-            left: 70%;
-        }
-        &__details__new{
-            margin-top: -27px;
-            margin-left: 10px;
-            width: 87%;
-             p{
-                margin-top: -12px;
-                margin-left: 0px;
-            }
-            h3{
-                margin-top: 18px;
-            }
-        }
+    &__details__new {
+      margin-top: -27px;
+      margin-left: 10px;
+      width: 87%;
+      p {
+        margin-top: -12px;
+        margin-left: 0px;
+      }
+      h3 {
+        margin-top: 18px;
+      }
     }
+  }
 }
